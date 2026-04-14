@@ -1,0 +1,2 @@
+import{u as s,j as e}from"./entry.client-BMigqD-2.js";const r="Грішанов Данило Євгенович 7.F2.25-2",a=[],i={title:"Author",lastModifiedTime:"2026-04-14T07:57:34.000Z"},u="pages/about.mdx";function o(t){const n={p:"p",...s(),...t.components};return e.jsx(n.p,{children:"Грішанов Данило Євгенович 7.F2.25-2"})}function m(t={}){const{wrapper:n}={...s(),...t.components};return n?e.jsx(n,{...t,children:e.jsx(o,{...t})}):o(t)}export{u as __filepath,m as default,r as excerpt,i as frontmatter,a as tableOfContents};
+//# sourceMappingURL=about-BXZg_-SJ.js.map
