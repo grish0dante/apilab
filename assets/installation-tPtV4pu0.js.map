@@ -1,1 +1,0 @@
-{"version":3,"file":"installation-tPtV4pu0.js","sources":["../../../pages/installation.mdx"],"sourcesContent":["---\r\ntitle: Installation\r\n---\r\n\r\nnpx create-zudoku@latest my-docs\r\n\r\ncd my-docs\r\n\r\nnpm install\r\n\r\nnpm run dev\r\n"],"names":[],"mappings":"0SAIA,SAAA;aAEA,SAAA;aAEA,SAAA;aAEA,SAAA"}

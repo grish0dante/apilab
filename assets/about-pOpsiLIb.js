@@ -1,0 +1,2 @@
+import{u as s,j as o}from"./entry.client-B4pFekiz.js";const r="Hrishanov Danylo 7.F2.25-2",c=[],i={title:"Author",lastModifiedTime:"2026-04-14T07:57:34.000Z"},u="pages/about.mdx";function e(t){const n={p:"p",...s(),...t.components};return o.jsx(n.p,{children:"Hrishanov Danylo 7.F2.25-2"})}function m(t={}){const{wrapper:n}={...s(),...t.components};return n?o.jsx(n,{...t,children:o.jsx(e,{...t})}):e(t)}export{u as __filepath,m as default,r as excerpt,i as frontmatter,c as tableOfContents};
+//# sourceMappingURL=about-pOpsiLIb.js.map
