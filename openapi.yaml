@@ -1,0 +1,62 @@
+openapi: 3.0.3
+info:
+  title: Financial System API
+  description: API для керування банківськими рахунками та транзакціями.
+  version: 1.0.0
+  contact:
+    name: Додайте своє ім'я
+servers:
+  - url: https://api.finance-app.local/v1
+paths:
+  /accounts:
+    get:
+      summary: Отримати список рахунків
+      responses:
+        '200':
+          description: Успішна відповідь
+    post:
+      summary: Створити рахунок
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AccountInput'
+      responses:
+        '201':
+          description: Рахунок створено
+  /transactions:
+    post:
+      summary: Виконати транзакцію
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TransactionInput'
+      responses:
+        '201':
+          description: Транзакцію успішно проведено
+        '400':
+          description: Недостатньо коштів або невірні дані
+
+components:
+  schemas:
+    AccountInput:
+      type: object
+      properties:
+        owner_name:
+          type: string
+        currency:
+          type: string
+          example: "USD"
+    TransactionInput:
+      type: object
+      properties:
+        from_account_id:
+          type: string
+        to_account_id:
+          type: string
+        amount:
+          type: number
+          format: float
