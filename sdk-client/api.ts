@@ -2,7 +2,7 @@
 /* eslint-disable */
 /**
  * Financial System API
- * API для керування банківськими рахунками та транзакціями.
+ * API for managing bank accounts and transactions.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -40,7 +40,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
     return {
         /**
          * 
-         * @summary Отримати список рахунків
+         * @summary Get list of accounts
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -69,7 +69,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
         },
         /**
          * 
-         * @summary Створити рахунок
+         * @summary Create account
          * @param {AccountInput} accountInput 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -103,7 +103,7 @@ export const DefaultApiAxiosParamCreator = function (configuration?: Configurati
         },
         /**
          * 
-         * @summary Виконати транзакцію
+         * @summary Perform transaction
          * @param {TransactionInput} transactionInput 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -146,7 +146,7 @@ export const DefaultApiFp = function(configuration?: Configuration) {
     return {
         /**
          * 
-         * @summary Отримати список рахунків
+         * @summary Get list of accounts
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -158,7 +158,7 @@ export const DefaultApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
-         * @summary Створити рахунок
+         * @summary Create account
          * @param {AccountInput} accountInput 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -171,7 +171,7 @@ export const DefaultApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
-         * @summary Виконати транзакцію
+         * @summary Perform transaction
          * @param {TransactionInput} transactionInput 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -193,7 +193,7 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
     return {
         /**
          * 
-         * @summary Отримати список рахунків
+         * @summary Get list of accounts
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -202,7 +202,7 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
         },
         /**
          * 
-         * @summary Створити рахунок
+         * @summary Create account
          * @param {AccountInput} accountInput 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -212,7 +212,7 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
         },
         /**
          * 
-         * @summary Виконати транзакцію
+         * @summary Perform transaction
          * @param {TransactionInput} transactionInput 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -229,7 +229,7 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
 export class DefaultApi extends BaseAPI {
     /**
      * 
-     * @summary Отримати список рахунків
+     * @summary Get list of accounts
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
@@ -239,7 +239,7 @@ export class DefaultApi extends BaseAPI {
 
     /**
      * 
-     * @summary Створити рахунок
+     * @summary Create account
      * @param {AccountInput} accountInput 
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -250,7 +250,7 @@ export class DefaultApi extends BaseAPI {
 
     /**
      * 
-     * @summary Виконати транзакцію
+     * @summary Perform transaction
      * @param {TransactionInput} transactionInput 
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}

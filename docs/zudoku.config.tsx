@@ -30,7 +30,7 @@ const config: ZudokuConfig = {
             "/about",
             "/installation",
             "/authorization",
-            
+            "/techzavd"            
           ],
         },
         
@@ -55,6 +55,11 @@ const config: ZudokuConfig = {
       type: "link",
       to: "/authorization",
       label: "Authorization",
+    },
+    {
+      type: "link",
+      to: "/techzavd",
+      label: "TechZavd",
     },
   ],
   

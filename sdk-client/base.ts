@@ -2,7 +2,7 @@
 /* eslint-disable */
 /**
  * Financial System API
- * API для керування банківськими рахунками та транзакціями.
+ * API for managing bank accounts and transactions.
  *
  * The version of the OpenAPI document: 1.0.0
  * 

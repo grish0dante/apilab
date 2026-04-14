@@ -4,9 +4,9 @@ All URIs are relative to *https://api.finance-app.local/v1*
 
 |Method | HTTP request | Description|
 |------------- | ------------- | -------------|
-|[**accountsGet**](#accountsget) | **GET** /accounts | Отримати список рахунків|
-|[**accountsPost**](#accountspost) | **POST** /accounts | Створити рахунок|
-|[**transactionsPost**](#transactionspost) | **POST** /transactions | Виконати транзакцію|
+|[**accountsGet**](#accountsget) | **GET** /accounts | Get list of accounts|
+|[**accountsPost**](#accountspost) | **POST** /accounts | Create account|
+|[**transactionsPost**](#transactionspost) | **POST** /transactions | Perform transaction|
 
 # **accountsGet**
 > accountsGet()
@@ -47,7 +47,7 @@ No authorization required
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-|**200** | Успішна відповідь |  -  |
+|**200** | Successful response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -98,7 +98,7 @@ No authorization required
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-|**201** | Рахунок створено |  -  |
+|**201** | Account created |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -149,8 +149,8 @@ No authorization required
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-|**201** | Транзакцію успішно проведено |  -  |
-|**400** | Недостатньо коштів або невірні дані |  -  |
+|**201** | Transaction successful |  -  |
+|**400** | Insufficient funds or invalid data |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

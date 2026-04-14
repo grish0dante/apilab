@@ -1,21 +1,21 @@
 openapi: 3.0.3
 info:
   title: Financial System API
-  description: API для керування банківськими рахунками та транзакціями.
+  description: API for managing bank accounts and transactions.
   version: 1.0.0
   contact:
-    name: Грішанов Данило Євгенович
+    name: Hrishanov Danylo
 servers:
   - url: https://api.finance-app.local/v1
 paths:
   /accounts:
     get:
-      summary: Отримати список рахунків
+      summary: Get list of accounts
       responses:
         '200':
-          description: Успішна відповідь
+          description: Successful response
     post:
-      summary: Створити рахунок
+      summary: Create account
       requestBody:
         required: true
         content:
@@ -24,10 +24,10 @@ paths:
               $ref: '#/components/schemas/AccountInput'
       responses:
         '201':
-          description: Рахунок створено
+          description: Account created
   /transactions:
     post:
-      summary: Виконати транзакцію
+      summary: Perform transaction
       requestBody:
         required: true
         content:
@@ -36,9 +36,9 @@ paths:
               $ref: '#/components/schemas/TransactionInput'
       responses:
         '201':
-          description: Транзакцію успішно проведено
+          description: Trasaction successful
         '400':
-          description: Недостатньо коштів або невірні дані
+          description: Not enough funds or invalid account IDs
 
 components:
   schemas:

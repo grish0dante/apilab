@@ -1,0 +1,61 @@
+---
+title: Technical Task, Technical Report
+---
+
+1. Introduction
+Purpose: This document describes a web application for viewing, managing, and sharing 3D models directly in the browser without the need for third-party plugins.
+
+Objective: To design and develop a system for interacting with three-dimensional objects that provides a user-friendly interface for general users.
+
+2. General Description
+Subject of Study: The process of developing an application for 3D model visualization.
+
+System Actors:
+
+Guest: Can register and browse the gallery.
+
+Registered User: Has access to a personal account, can upload, and delete models.
+
+User (General Actor): Includes shared functions such as viewing models and logging into the system.
+
+3. Functional Requirements
+The system must support the following functions:
+
+FR-1: Format Support. Capability to work with .GLB, .OBJ, and .STL file types.
+
+FR-2: Model Uploading. Ability to add files from a local device or select from an existing gallery.
+
+FR-3: Object Manipulation. Viewing models from different angles: scaling, rotation, and translation (moving).
+
+FR-4: Scene Configuration. Ability to toggle a grid, coordinate axes, and change the background color.
+
+FR-5: Data Management. Integration with the backend to store models and their descriptions in the database.
+
+4. Technology Stack and Architecture
+the following stack choice is justified in the work:
+
+Frontend: Vue.js (chosen for its reactivity and ease of integration).
+
+3D Engine: Three.js (chosen as a high-level library over WebGL, simplifying work with cameras, lighting, and meshes).
+
+Backend: Node.js and Express.js for request handling and authentication logic.
+
+Database: MongoDB (used for storing data regarding models and users).
+
+5. Design (UML)
+The following diagrams are used to visualize the system logic:
+
+Use Case Diagram: Describes the interaction of actors with functions such as "Add Model," "Registration," "Browse Gallery," etc.
+
+Activity Diagram: Used for modeling business processes.
+
+Sequence Diagram: To describe the dynamic interaction of objects over time.
+
+6. Non-Functional Requirements
+Validation: Checking file types and sizes during the upload process.
+
+Usability: An intuitively understandable interface for the end-user.
+
+Optimization: Automatic scaling of the model to fit the scene dimensions.
+
+Reliability: Handling server errors and incorrect data input.

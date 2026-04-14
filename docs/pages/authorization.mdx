@@ -1,41 +1,40 @@
-# Authorization
+---
+title: Authorization
+---
+This section describes how to access the protected resources of the Financial System API.
 
-Цей розділ описує, як отримати доступ до захищених ресурсів Financial System API.
+##Authorization Method
+The API utilizes the standard **Bearer Token (JWT)** protocol. This means that for every request to the server, you must provide a specific token in the HTTP request header.
 
-## Метод авторизації
+###How It Works
+All requests must include the `Authorization` header in the following format:
 
-API використовує стандарт **Bearer Token (JWT)**. Це означає, що для кожного запиту до сервера ви повинні надавати спеціальний токен у заголовку HTTP-запиту.
+`Authorization: Bearer <your_token>`
 
-### Як це працює
+##Obtaining a Token
+To gain access, follow these steps:
 
-Усі запити повинні містити заголовок `Authorization` у наступному форматі:
+1.Authenticate through your organization's internal system.
 
-`Authorization: Bearer <ваш_токен>`
+2.Copy the provided JWT token.
 
-## Отримання токена
+3.Add it to your SDK configuration or HTTP client settings.
 
-Для отримання доступу виконайте наступні кроки:
-1. Авторизуйтеся через внутрішню систему вашої організації.
-2. Скопіюйте наданий системою **JWT токен**.
-3. Додайте його до конфігурації вашого SDK або HTTP-клієнта.
+##Response Status Codes
+When handling authorization, you may encounter the following errors:
 
-## Статус-коди відповідей
+Status Code	Description	Reason
 
-При роботі з авторизацією ви можете зустріти наступні помилки:
-
-| Статус-код | Опис | Причина |
 | :--- | :--- | :--- |
-| **401 Unauthorized** | Неавторизовано | Токен відсутній, термін його дії закінчився або він невірний. |
-| **403 Forbidden** | Заборонено | Токен валідний, але у вас немає прав доступу до цього конкретного ресурсу. |
-
-## Приклад використання в SDK
-
-Якщо ви використовуєте згенерований SDK на **TypeScript**, налаштування авторизації виглядає так:
+| **401 Unauthorized** |	Unauthorized|	The token is missing, expired, or invalid.|
+| **403 Forbidden** |	Forbidden|	The token is valid, but you do not have permission to access this specific resource.|
+## SDK Usage Example
+If you are using the generated **TypeScript** SDK, the authorization setup looks like this:
 
 ```typescript
 import { Configuration } from "./sdk-client";
 
 const apiConfig = new Configuration({
-  accessToken: "ваш_jwt_токен_тут",
-  basePath: "[https://api.finance-app.local/v1](https://api.finance-app.local/v1)"
+  accessToken: "your_jwt_token_here",
+  basePath: "https://api.finance-app.local/v1"
 });
